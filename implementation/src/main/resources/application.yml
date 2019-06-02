@@ -1,0 +1,19 @@
+app:
+  persons:
+    parsing:
+      #location: /home/mlw/dev/assecor-challenge-mlw/data/persons_clean_short.csv
+      location: /home/mlw/dev/assecor-challenge-mlw/implementation/src/test/resources/persons_dirty_linescramble_medium.csv
+      mode: import-no-wipe
+
+spring:
+  datasource:
+    url: jdbc:mysql://192.168.124.2:3306/assecorpeople1
+    username: root
+    password: 1234
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
