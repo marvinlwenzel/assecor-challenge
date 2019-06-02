@@ -4,7 +4,7 @@
     <groupId>eu.marvinlukaswenzel</groupId>
     <artifactId>assecorpeople</artifactId>
     <packaging>jar</packaging>
-    <version>v1.0</version>
+    <version>v1.1</version>
 
     <parent>
         <groupId>org.springframework.boot</groupId>

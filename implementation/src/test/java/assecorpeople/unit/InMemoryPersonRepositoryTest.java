@@ -21,7 +21,6 @@ public class InMemoryPersonRepositoryTest {
     public InMemoryPersonRepositoryTest() {
 
     }
-    //long id, String lastName, String givenName, String zipCode, Color favoriteColor, String city
 
     @Before
     public void init() {

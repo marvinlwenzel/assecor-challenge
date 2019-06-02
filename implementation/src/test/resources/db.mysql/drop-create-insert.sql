@@ -1,5 +1,3 @@
-USE assecorpersonstest;
-
 DROP TABLE IF EXISTS person;
 DROP TABLE IF EXISTS color;
 
@@ -110,4 +108,3 @@ INSERT INTO person(id, color_id, firstname, lastname, zipcode, city) VALUES
 (78, 1, 'FN78', 'LN78', '10078', 'City78'),
 (79, 2, 'FN79', 'LN79', '10079', 'City79'),
 (80, 3, 'FN80', 'LN80', '10080', 'City80');
-

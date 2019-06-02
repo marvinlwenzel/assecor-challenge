@@ -1,7 +1,6 @@
 app:
   persons:
     parsing:
-      #location: /home/mlw/dev/assecor-challenge-mlw/data/persons_clean_short.csv
       location: /home/mlw/dev/assecor-challenge-mlw/implementation/src/test/resources/persons_dirty_linescramble_medium.csv
       mode: never
 
