@@ -87,7 +87,7 @@ public class FuzzyCsvPersonParser implements CsvPersonParser {
     @Override
     public Collection<? extends IndexedString> getTrash() {
         if (!parsed) {
-            throw new IllegalStateException("Tried to call getPerson() before parsing a CSV.");
+            throw new IllegalStateException("Tried to call getTrash() before parsing a CSV.");
         }
         return new LinkedList<>(this.trash);
     }
@@ -109,8 +109,6 @@ public class FuzzyCsvPersonParser implements CsvPersonParser {
         Optional<Color> colorOptional = colorRepository.findById(colorId);
         if (colorOptional.isEmpty()) {
             this.parsedPersons.add(new Person(id, lastname, givenname, zip, null, city));
-            //this.trash.add(indexedFields.origin);
-            //TODO
         } else {
             Person person = new Person(id, lastname, givenname, zip, colorOptional.get(), city);
             this.parsedPersons.add(person);
